@@ -68,10 +68,10 @@ middle_section.addEventListener("click", (e) => {
 
   if (item.classList[0] === "check-button" && item.parentElement.parentElement.parentElement.classList[0] === "incomplete-list"){
     item.parentElement.parentElement.classList.add("slideout-animation");
-    setTimeout(() => {
-      complete_list.appendChild(item.parentElement.parentElement);
+    item.parentElement.parentElement.addEventListener("animationend", () => {
       item.parentElement.parentElement.classList.remove("slideout-animation");
-    }, 500);
+      complete_list.appendChild(item.parentElement.parentElement);
+    });
   } else if (item.classList[0] === "check-button" && item.parentElement.parentElement.parentElement.classList[0] === "complete-list"){
     incomplete_list.appendChild(item.parentElement.parentElement);
   }
