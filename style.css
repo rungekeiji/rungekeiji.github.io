@@ -234,14 +234,6 @@ p{
     position: relative;
 }
 
-/*
-.todo-item, .side-task-item{
-    animation-duration: 1.5s;
-    animation-name: fadein;
-    animation-iteration-count: 1;
-}
-*/
-
 @keyframes fadein{
     from{
         opacity: 0;
@@ -252,7 +244,7 @@ p{
 }
 
 .fadeout-animation{
-    animation-duration: 0.75s;
+    animation-duration: 0.5s;
     animation-name: fadeout;
     animation-iteration-count: 1;
 }
@@ -267,7 +259,7 @@ p{
 }
 
 .slideout-animation{
-    animation-duration: 5s;
+    animation-duration: 2s;
     animation-name: slideout;
     animation-iteration-count: 1;
 }
@@ -278,6 +270,6 @@ p{
         right: 0px;
     }
     to{
-        right: -5000px;
+        right: -7500px;
     }
 }
