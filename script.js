@@ -71,7 +71,7 @@ middle_section.addEventListener("click", (e) => {
     setTimeout(() => {
       complete_list.appendChild(item.parentElement.parentElement);
       item.parentElement.parentElement.classList.remove("slideout-animation");
-    }, 1000);
+    }, 500);
   } else if (item.classList[0] === "check-button" && item.parentElement.parentElement.parentElement.classList[0] === "complete-list"){
     incomplete_list.appendChild(item.parentElement.parentElement);
   }
@@ -93,12 +93,3 @@ middle_section.addEventListener("input", (e) => {
     item.parentElement.style.backgroundColor = item.value;
   }
 });
-
-/*
-middle_section.addEventListener("mouseover", (e) => {
-  const item = e.target;
-  if (item.classList[0] === "priority-circle"){
-    item.style.backgroundColor = item.parentElement.parentElement.style.backgroundColor;
-  }
-});
-*/
