@@ -234,15 +234,6 @@ p{
     position: relative;
 }
 
-@keyframes fadein{
-    from{
-        opacity: 0;
-    }
-    to{
-        opacity: 1;
-    }
-}
-
 .fadeout-animation{
     animation-duration: 0.5s;
     animation-name: fadeout;
@@ -259,17 +250,19 @@ p{
 }
 
 .slideout-animation{
-    animation-duration: 2s;
+    animation-duration: 0.5s;
     animation-name: slideout;
     animation-iteration-count: 1;
+    animation-direction: reverse;
 }
 
 @keyframes slideout{
     from{
-        position: relative;
-        right: 0px;
+        margin-left: 100%;
+        width: 300%
     }
     to{
-        right: -7500px;
+        margin-left: 0%;
+        width: 100%;
     }
 }
