@@ -89,7 +89,7 @@ p{
     right: 0px;
     top: -37px;
     padding: 2px;
-    background-color: rgba(245, 54, 67, 1);
+    background-color: rgba(245, 54, 67, 0.75);
     border: 2px solid black;
     border-radius: 5px;
     font-size: 1.25rem;
@@ -108,7 +108,7 @@ p{
     right: 20px;
     top: -37px;
     padding: 2px;
-    background-color: rgba(94, 219, 111, 1);
+    background-color: rgba(94, 219, 111, 0.75);
     border: 2px solid black;
     border-radius: 5px;
     font-size: 1.25rem;
@@ -235,7 +235,7 @@ p{
 }
 
 .fadeout-animation{
-    animation-duration: 0.5s;
+    animation-duration: 0.3s;
     animation-name: fadeout;
     animation-iteration-count: 1;
 }
@@ -250,7 +250,7 @@ p{
 }
 
 .slideout-animation{
-    animation-duration: 0.5s;
+    animation-duration: 0.3s;
     animation-name: slideout;
     animation-iteration-count: 1;
     animation-direction: reverse;
@@ -265,4 +265,9 @@ p{
         margin-left: 0%;
         width: 100%;
     }
+}
+
+.todo-submit:hover, .add-button:hover{
+    background-color: grey;
+    cursor: pointer;
 }
