@@ -36,8 +36,8 @@ todo_submit.addEventListener("click", () => {
   add_button.setAttribute("class", "add-button");
   add_button.innerHTML = "+";
 
-  main_task.appendChild(todo_priority_marker);
   main_task.appendChild(priority_circle);
+  main_task.appendChild(todo_priority_marker);
   main_task.appendChild(todo_due_date);
   main_task.appendChild(todo_description);
   main_task.appendChild(delete_button);
